@@ -21,12 +21,19 @@
         "build": "tsc -p tsconfig.json",
         "build-all": "yarn clean && yarn build && yarn esbuild-node && yarn esbuild-browser"
     },
+    "dependencies": {
+        "mysql2": "^2.2.5",
+        "sequelize": "^6.6.2",
+        "sequelize-typescript": "^2.1.0"
+    },
     "devDependencies": {
         "@types/jest": "^26.0.23",
         "@types/node": "^15.12.2",
+        "@types/sequelize": "^4.28.9",
         "@typescript-eslint/parser": "^4.26.1",
         "eslint": "^7.28.0",
         "jest": "^27.0.4",
+        "sequelize-cli": "^6.2.0",
         "ts-jest": "^27.0.3",
         "ts-node": "^10.0.0",
         "typedoc": "^0.20.36",

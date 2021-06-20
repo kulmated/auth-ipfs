@@ -4,8 +4,10 @@
 /dist/
 /docs/
 .idea/*
-/ipfs/*
+/ipfs/
+/db/
 
+.env
 .DS_Store
 coverage
 *.log

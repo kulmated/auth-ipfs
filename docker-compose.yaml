@@ -1,0 +1,18 @@
+version: "3"
+services:
+    db:
+        image: mariadb:10
+        env_file: .env
+        ports:
+            - "3307:3306"
+        volumes:
+            - ./db/:/var/lib/mysql
+    ipfs_host:
+        image: ipfs/go-ipfs:latest
+        ports:
+            - "4001:4001"
+            - "8080:8080"
+            - "5000:5001"
+        volumes:
+            - ./ipfs/export:/export
+            - ./ipfs/data:/data/ipfs
