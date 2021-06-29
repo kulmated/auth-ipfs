@@ -6,6 +6,7 @@
 .idea/*
 /ipfs/
 /db/
+/config/development.yaml
 
 .env
 .DS_Store
